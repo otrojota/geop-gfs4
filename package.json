@@ -23,7 +23,7 @@
   "homepage": "https://github.com/otrojota/geop-gfs4#readme",
   "dependencies": {
     "concat-files": "^0.1.1",
-    "geop-base-proveedor-capas": "file:../geop-base-proveedor-capas",
+    "geop-base-proveedor-capas": "git+https://github.com/otrojota/geop-base-proveedor-capas.git",
     "moment-timezone": "^0.5.27",
     "pngjs": "^3.4.0"
   }
