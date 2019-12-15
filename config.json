@@ -1,0 +1,29 @@
+{
+    "webServer":{
+        "http":{"port":8081}
+    },
+    "limites":{
+        "w":-130.0, "e":-20.0,
+        "s":-75.0, "n":30.0
+    },
+    "dataPath_bak":"/Volumes/JSamsung/geoportal/gfs4/data",
+    "dataPath":"/home/data",
+    "nDescargasParalelo":5,
+    "publishPath_bak":"/Volumes/JSamsung/geoportal/gfs4/publish",
+    "publishPath":"/home/publish",
+    "variablesPorBanda":{
+        "TMP":[{
+            "codigo":"TMP_SUP",
+            "unidad":"ºC",
+            "nombre":"Temperatura Superficial (Suelo o Agua)",
+            "nivelInicial":0,
+            "niveles":[{
+                "gribShortName":"0-SFC",
+                "descripcion":"Superficial"
+            }],
+            "grupos":["meteorologia"],
+            "icono":"img/variables/temperatura.svg",
+            "decimales":2
+        }]
+    }
+}

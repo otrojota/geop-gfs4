@@ -1,0 +1,30 @@
+{
+  "name": "geop-gfs4",
+  "version": "1.0.0",
+  "description": "GFS4 proveedor de capas para GeoPortal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otrojota/geop-gfs4.git"
+  },
+  "keywords": [
+    "geoportal",
+    "gfs",
+    "noaa"
+  ],
+  "author": "Jota",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/otrojota/geop-gfs4/issues"
+  },
+  "homepage": "https://github.com/otrojota/geop-gfs4#readme",
+  "dependencies": {
+    "concat-files": "^0.1.1",
+    "geop-base-proveedor-capas": "file:../geop-base-proveedor-capas",
+    "moment-timezone": "^0.5.27",
+    "pngjs": "^3.4.0"
+  }
+}
