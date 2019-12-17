@@ -6,8 +6,12 @@ for (let i=2; i<process.argv.length; i++) {
     let arg = process.argv[i].toLowerCase();
     if (arg == "-d" || arg == "-download" || arg == "-downloader") downloader = true;
 }
+if (!downloader && process.env.DOWNLOADER) {
+    downloader = true;
+}
 
 if (downloader) {
+    console.log("[GFS4] Iniciando en modo Downloader");
     require("./lib/Downloader").init();
 } else {
     const proveedorCapas = new ProveedorCapasGFS4({
