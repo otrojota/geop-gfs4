@@ -14,9 +14,11 @@ if (downloader) {
     console.log("[GFS4] Iniciando en modo Downloader");
     require("./lib/Downloader").init();
 } else {
+    const config = require("./lib/Config").getConfig();
     const proveedorCapas = new ProveedorCapasGFS4({
         puertoHTTP:8081,
-        directorioWeb:__dirname + "/www"
+        directorioWeb:__dirname + "/www",
+        directorioPublicacion:config.publishPath
     });
     proveedorCapas.start();
 }
