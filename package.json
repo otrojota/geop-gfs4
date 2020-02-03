@@ -24,7 +24,7 @@
   "dependencies": {
     "concat-files": "^0.1.1",
     "extend": "^3.0.2",
-    "geop-base-proveedor-capas": "git+https://github.com/otrojota/geop-base-proveedor-capas.git",
+    "geop-base-proveedor-capas": "file:../geop-base-proveedor-capas",
     "moment-timezone": "^0.5.27",
     "pngjs": "^3.4.0"
   }
