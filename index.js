@@ -1,14 +1,19 @@
-global.confPath = __dirname + "/config.json";
-const ProveedorCapasGFS4 = require("./lib/ProveedorCapasGFS4");
-
 let downloader = false;
+let debug = false;
 for (let i=2; i<process.argv.length; i++) {
     let arg = process.argv[i].toLowerCase();
     if (arg == "-d" || arg == "-download" || arg == "-downloader") downloader = true;
+    if (arg == "-dbg" || arg == "-debug") debug = true;
 }
 if (!downloader && process.env.DOWNLOADER) {
     downloader = true;
 }
+if (debug) {
+    process.env.DEBUG = true;
+}
+
+global.confPath = __dirname + "/config.json";
+const ProveedorCapasGFS4 = require("./lib/ProveedorCapasGFS4");
 
 if (downloader) {
     console.log("[GFS4] Iniciando en modo Downloader");
