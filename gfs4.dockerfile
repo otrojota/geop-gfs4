@@ -3,5 +3,5 @@ FROM otrojota/geoportal:gdal-nodejs-1.01
 WORKDIR /opt/geoportal/geop-gfs4
 COPY . .
 RUN npm install 
-EXPOSE 8081
+EXPOSE 8181
 CMD node index.js

@@ -21,7 +21,7 @@ if (downloader) {
 } else {
     const config = require("./lib/Config").getConfig();
     const proveedorCapas = new ProveedorCapasGFS4({
-        puertoHTTP:8081,
+        puertoHTTP:config.webServer.http.port,
         directorioWeb:__dirname + "/www",
         directorioPublicacion:config.publishPath
     });
