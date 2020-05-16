@@ -6,11 +6,11 @@
         "w":-130.0, "e":-20.0,
         "s":-75.0, "n":30.0
     },
-    "dataPath_bak":"/Volumes/JSamsung/geoportal/gfs4/data",
-    "dataPath":"/home/data",
+    "dataPath":"/Volumes/JSamsung/geoportal/gfs4/data",
+    "dataPath_bak":"/home/data",
     "nDescargasParalelo":10,
-    "publishPath_bak":"/Volumes/JSamsung/geoportal/gfs4/publish",
-    "publishPath":"/home/publish",
+    "publishPath":"/Volumes/JSamsung/geoportal/gfs4/publish",
+    "publishPath_bak":"/home/publish",
     "variablesPorBanda":{
         "TMP":[{
             "codigo":"TMP_SUP",
