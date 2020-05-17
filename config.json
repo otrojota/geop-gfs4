@@ -6,10 +6,10 @@
         "w":-130.0, "e":-20.0,
         "s":-75.0, "n":30.0
     },
-    "dataPath":"/Volumes/JSamsung/geoportal/gfs4/data",
+    "dataPath":"/Users/jota/proyectos/PUCV/geoportal/data/gfs4/data",
     "dataPath_bak":"/home/data",
-    "nDescargasParalelo":10,
-    "publishPath":"/Volumes/JSamsung/geoportal/gfs4/publish",
+    "nDescargasParalelo":2,
+    "publishPath":"/Users/jota/proyectos/PUCV/geoportal/data/gfs4/publish",
     "publishPath_bak":"/home/publish",
     "variablesPorBanda":{
         "TMP":[{
