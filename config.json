@@ -6,11 +6,11 @@
         "w":-130.0, "e":-20.0,
         "s":-75.0, "n":30.0
     },
-    "dataPath":"/Users/jota/proyectos/PUCV/geoportal/data/gfs4/data",
-    "dataPath_bak":"/home/data",
-    "nDescargasParalelo":2,
-    "publishPath":"/Users/jota/proyectos/PUCV/geoportal/data/gfs4/publish",
-    "publishPath_bak":"/home/publish",
+    "dataPath_bak":"/Users/jota/proyectos/PUCV/geoportal/data/gfs4/data",
+    "dataPath":"/home/data",
+    "nDescargasParalelo":10,
+    "publishPath_bak":"/Users/jota/proyectos/PUCV/geoportal/data/gfs4/publish",
+    "publishPath":"/home/publish",
     "variablesPorBanda":{
         "TMP":[{
             "codigo":"TMP_SUP",
