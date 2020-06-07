@@ -6,11 +6,11 @@
         "w":-130.0, "e":-20.0,
         "s":-75.0, "n":30.0
     },
-    "dataPath_bak":"/Users/jota/proyectos/PUCV/geoportal/data/gfs4/data",
-    "dataPath":"/home/data",
+    "dataPath":"/Users/jota/proyectos/PUCV/geoportal/data/gfs4/data",
+    "dataPath_bak":"/home/data",
     "nDescargasParalelo":10,
-    "publishPath_bak":"/Users/jota/proyectos/PUCV/geoportal/data/gfs4/publish",
-    "publishPath":"/home/publish",
+    "publishPath":"/Users/jota/proyectos/PUCV/geoportal/data/gfs4/publish",
+    "publishPath_bak":"/home/publish",
     "variablesPorBanda":{
         "TMP":[{
             "codigo":"TMP_SUP",
@@ -487,7 +487,8 @@
         }], 
         "PRES":[{
             "codigo":"PRES_SUELO",
-            "unidad":"Pa",
+            "unidad":"hPa",
+            "transformer":"Pa=>hPa",
             "nombre":"Presión Atmosférica (Suelo o Superficie)",
             "nivelInicial":0,
             "niveles":[{
@@ -500,7 +501,8 @@
         }], 
         "PRMSL":[{
             "codigo":"PRES_MSL",
-            "unidad":"Pa",
+            "unidad":"hPa",
+            "transformer":"Pa=>hPa",
             "nombre":"Presión Atmosférica (Nivel Medio del Mar)",
             "nivelInicial":0,
             "niveles":[{
