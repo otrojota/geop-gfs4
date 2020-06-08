@@ -6,11 +6,11 @@
         "w":-130.0, "e":-20.0,
         "s":-75.0, "n":30.0
     },
-    "dataPath":"/Users/jota/proyectos/PUCV/geoportal/data/gfs4/data",
-    "dataPath_bak":"/home/data",
+    "dataPath_bak":"/Users/jota/proyectos/PUCV/geoportal/data/gfs4/data",
+    "dataPath":"/home/data",
     "nDescargasParalelo":10,
-    "publishPath":"/Users/jota/proyectos/PUCV/geoportal/data/gfs4/publish",
-    "publishPath_bak":"/home/publish",
+    "publishPath_bak":"/Users/jota/proyectos/PUCV/geoportal/data/gfs4/publish",
+    "publishPath":"/home/publish",
     "variablesPorBanda":{
         "TMP":[{
             "codigo":"TMP_SUP",
@@ -127,7 +127,13 @@
             }],
             "grupos":["meteorologia"],
             "icono":"img/variables/nubes.svg",
-            "decimales":2
+            "decimales":2,
+            "opacidad":100,
+            "visualizadoresIniciales":{
+                "shader":{
+                    "escala":{"dinamica":false, "min":0, "max":100, "nombre":"Transparencia Lineal"}
+                }
+            }
         }, {
             "codigo":"TCDC_LOW",
             "unidad":"%",
@@ -139,7 +145,13 @@
             }],
             "grupos":["meteorologia"],
             "icono":"img/variables/nubes.svg",
-            "decimales":2
+            "decimales":2,
+            "opacidad":100,
+            "visualizadoresIniciales":{
+                "shader":{
+                    "escala":{"dinamica":false, "min":0, "max":100, "nombre":"Transparencia Lineal"}
+                }
+            }
         }, {
             "codigo":"TCDC_MED",
             "unidad":"%",
@@ -151,7 +163,13 @@
             }],
             "grupos":["meteorologia"],
             "icono":"img/variables/nubes.svg",
-            "decimales":2
+            "decimales":2,
+            "opacidad":100,
+            "visualizadoresIniciales":{
+                "shader":{
+                    "escala":{"dinamica":false, "min":0, "max":100, "nombre":"Transparencia Lineal"}
+                }
+            }
         }, {
             "codigo":"TCDC_HIGH",
             "unidad":"%",
@@ -163,7 +181,13 @@
             }],
             "grupos":["meteorologia"],
             "icono":"img/variables/nubes.svg",
-            "decimales":2
+            "decimales":2,
+            "opacidad":100,
+            "visualizadoresIniciales":{
+                "shader":{
+                    "escala":{"dinamica":false, "min":0, "max":100, "nombre":"Transparencia Lineal"}
+                }
+            }
         }, {
             "codigo":"TCDC_HP",
             "unidad":"%",
@@ -190,9 +214,8 @@
             "decimales":2,
             "opacidad":100,
             "visualizadoresIniciales":{
-                "isobandas":{
-                    "autoStep":true, 
-                    "escala":{"dinamica":true, "nombre":"Transparencia Lineal"}
+                "shader":{
+                    "escala":{"dinamica":false, "min":0, "max":100, "nombre":"Transparencia Lineal"}
                 }
             }
         }], 
@@ -294,32 +317,7 @@
             "grupos":["meteorologia"],
             "icono":"img/variables/vorticidad.svg",
             "decimales":2
-        }],
-        "O3MR":[{
-            "codigo":"O3MR_HP",
-            "unidad":"prop",
-            "nombre":"Ozono",
-            "nivelInicial":3,
-            "niveles":[{
-                "gribShortName":"30000-ISBL",
-                "descripcion":"300 hPa"
-            }, {
-                "gribShortName":"50000-ISBL",
-                "descripcion":"500 hPa"
-            }, {
-                "gribShortName":"70000-ISBL",
-                "descripcion":"700 hPa"
-            }, {
-                "gribShortName":"85000-ISBL",
-                "descripcion":"850 hPa"
-            }, {
-                "gribShortName":"100000-ISBL",
-                "descripcion":"1000 hPa"
-            }],
-            "grupos":["meteorologia"],
-            "icono":"img/variables/ozono.svg",
-            "decimales":2
-        }],
+        }],        
         "TOZNE":[{
             "codigo":"TOZNE",
             "unidad":"Dobson",
