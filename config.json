@@ -114,7 +114,15 @@
             }],
             "grupos":["meteorologia"],
             "icono":"img/variables/prop-tierra.svg",
-            "decimales":2
+            "decimales":2,
+            "visualizadoresIniciales":{
+                "shader":{
+                    "escala":{"dinamica":true, "nombre":"zeu - NASA OceanColor"}
+                },
+                "isolineas":{
+                    "autoStep":true
+                }
+            }
         }],
         "TCDC":[{
             "codigo":"TCDC_FULL",
@@ -355,7 +363,12 @@
             }],
             "grupos":["meteorologia"],
             "icono":"img/variables/humedad.svg",
-            "decimales":2
+            "decimales":2,
+            "visualizadoresIniciales":{
+                "shader":{
+                    "escala":{"dinamica":true, "nombre":"Magma - MatplotLib"}
+                }
+            }
         }],
         "TMAX":[{
             "codigo":"TMAX",
@@ -495,7 +508,15 @@
             }],
             "grupos":["meteorologia"],
             "icono":"img/variables/presion.svg",
-            "decimales":2
+            "decimales":2,
+            "visualizadoresIniciales":{
+                "shader":{
+                    "escala":{"dinamica":true, "nombre":"Viridis - MatplotLib"}
+                },
+                "isolineas":{
+                    "autoStep":true
+                }
+            }
         }], 
         "PRMSL":[{
             "codigo":"PRES_MSL",
@@ -509,7 +530,15 @@
             }],
             "grupos":["meteorologia"],
             "icono":"img/variables/presion.svg",
-            "decimales":2
+            "decimales":2,
+            "visualizadoresIniciales":{
+                "shader":{
+                    "escala":{"dinamica":true, "nombre":"Viridis - MatplotLib"}
+                },
+                "isolineas":{
+                    "autoStep":false, "step":4
+                }
+            }
         }]
     }
 }
